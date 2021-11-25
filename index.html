@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderpets</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> -->
 </head>
 <body>
+    <div class="main-container">
         <section class="header">
             <div class="logo">
                 <h2>Entitled logo</h2>
             </div>
-            <div class="toggle"></div>
+
+            
+            <div class="toggle"><img src="img/icon-hamburger.svg" alt=""></div>
         </section>
 
         <section class="home reveal">
             <img src="img/Untitled-7.jpg" class="bg-style">
             <div class="content">
-                <h2>Explore the Modern Society</h2>
+                <h2>Explore the</h2>
+                <h2 class="typing">Modern Society</h2>
                 <p>Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Aperiam fugiat sed est. 
                     Sapiente assumenda quis perferendis quidem. 
@@ -31,6 +35,7 @@
             </div>
         </section>
 
+        <main>
         <section class="photography reveal">
             <div class="ctn">
                 <h2 class="titleText">Photography description</h2> <!-- Optional: double qoutes, span, or anything can be used as design  -->
@@ -69,26 +74,26 @@
                     <h3 class="titleText">Fashion</h3>
                         <div class="box">
                             <div class="img">
-                                <img src="img/fas1.jpg" class="bg-style">
+                                <img src="img/model1.jpg" class="bg-style">
                             </div>
                             <div class="content">
-                                <h2>Photo no.1</h2>
+                                <h2>Alicia Casano</h2>
                             </div>
                         </div>
                         <div class="box reveal">
                             <div class="img">
-                                <img src="img/fas0.jpg" class="bg-style">
+                                <img src="img/model2.jpg" class="bg-style">
                             </div>
                             <div class="content">
-                                <h2>Photo no.2</h2>
+                                <h2>Ariane Abarides</h2>
                             </div>
                         </div>
                         <div class="box reveal">
                             <div class="img">
-                                <img src="img/fas3.jpg" class="bg-style">
+                                <img src="img/model3.jpg" class="bg-style">
                             </div>
                             <div class="content">
-                                <h2>Photo no.3</h2>
+                                <h2>Frisca Salazar</h2>
                             </div>
                         </div>
                     </div>
@@ -96,40 +101,50 @@
                         <h3 class="titleText">Christmas</h3>
                             <div class="box reveal">
                                 <div class="img">
-                                    <img src="img/ch1.jpg" class="bg-style">
+                                    <img src="img/s-ch1.jpg" class="bg-style ch">
                                 </div>
                                 <div class="content">
-                                    <h2>Photo no.1</h2>
+                                    <h2>Carl Angelo Patito</h2>
                                 </div>
                             </div>
                             <div class="box reveal">
                                 <div class="img">
-                                    <img src="img/ch2.jpg" class="bg-style">
+                                    <img src="img/s-ch2.jpg" class="bg-style ch">
                                 </div>
                                 <div class="content">
-                                    <h2>Photo no.2</h2>
+                                    <h2>Mandella Bianca Quintos</h2>
                                 </div>
                             </div>
                             <div class="box reveal">
                                 <div class="img">
-                                    <img src="img/ch3.jpg" class="bg-style">
+                                    <img src="img/s-ch3.jpg" class="bg-style ch">
                                 </div>
                                 <div class="content">
-                                    <h2>Photo no.3</h2>
+                                    <h2>Bulaklak ng Munisipyo</h2>
                                 </div>
                             </div>
                         </div>
             <a href="#" class="btn">View more</a>
         </section>
         
-        
-            <!-- <div class="bg">
-                <img src="img/hello.jpg" class="bg-style">
-            </div> -->
-        <section class="dev-sec">
-            <div class="developer">
-                <img src="img/dev-bg1.jpg" class="bg-style img">
-                <h1>Our Developer &amp; Designer</h1>
+         <section class="about">
+            <div class="devAbout">
+                    <h2 class="titleText">Photography is the story I fail to put into words</h2>
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quasi quam 
+                        quisquam odio nemo eaque aliquid 
+                        laboriosam repellat quia voluptatibus vel ad dolorum delectus commodi, Lorem ipsum dolor sit amet. lorem 10
+                        iusto recusandae id repudiandae cupiditate?<br>
+                    A incidunt neque quasi? Illum, saepe. Inventore adipisci </p>
+                    <a href="#" class="btn">Don't Click</a>
+                </div>
+                <div class="imgBx reveal">
+                    <img src="img/about.jpg" class="bg-style">
+                </div>
+        </section>
+
+        <section class="developer">
+                <img src="img/dev-bg1.jpg" class="bg-style">
+                <h1 class="title">Our Developer &amp; Designer</h1>
                 <div class="team">
                     <div class="team-member">
                         <div class="team-image">
@@ -197,27 +212,41 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
-        <section class="about">
-            <div class="devAbout">
-                <div class="content-section reveal">
-                    <h2 class="titleText">Photography is the story I fail to put into words</h2>
-                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quasi quam 
-                        quisquam odio nemo eaque aliquid 
-                        laboriosam repellat quia voluptatibus vel ad dolorum delectus commodi, Lorem ipsum dolor sit amet. lorem 10
-                        iusto recusandae id repudiandae cupiditate?<br>
-                    A incidunt neque quasi? Illum, saepe. Inventore adipisci </p>
-                    <a href="#" class="btn">Don't Click</a>
-                </div>
-                <div class="imgBx reveal">
-                    <img src="img/about.jpg" class="bg-style">
-                </div>
-            </div>
-        </section>
+       </main>
 
+        <footer>
+            <div class="footer-left">
+      
+              <!-- footer brand -->
+              <!-- footer nav -->
+      
+              <div class="text-footer">
+                  <h1>Contact Us</h1>
+                  <h3>famiypicture@gmail.com</h3>
+                  <h3>gamingKidney@gmail.com</h3>
+                  <h3>tambaysapol@gmail.com</h3>
+              </div>
+            </div>
+      
+            <div class="footer-right">
+              <div class="social-links">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+      
+              <p class="copyright">&copy; 2021 Wonderpets. All rights reserved.</p>
+            </div>
+          </footer>
+    </div>
 
         <!-- javascript -->
         <script src="app.js"></script>
+
+        <!-- THIS IS ICONS FROM IONIC-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
