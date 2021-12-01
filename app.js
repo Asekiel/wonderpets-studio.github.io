@@ -37,7 +37,7 @@ function reveal() {
 // TEXT TYPING 
 // -----------------------------
 
-const texts = ['Photography', 'Modern Society', 'Passionate'];
+const texts = ['Inspiration', 'Modern Society', 'Stunning capture', 'Creativity.'];
 let count = 0;
 let index = 0;
 let currentText = '';
