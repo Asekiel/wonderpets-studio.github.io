@@ -1,0 +1,425 @@
+
+
+
+/* Photography Section */
+
+
+.photography {
+    margin: 0;
+    padding: 0;
+}
+/* 
+.photography::before {
+    content: '';
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(to top, #111, transparent);
+} 
+.photography::after {
+    content: '';
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, #111, transparent);
+} */
+
+.photo-container{
+    /* margin-top: 100px; */
+    padding-top: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* opacity: 0.43; */
+}
+
+.box {
+    width: 15%;
+    height: 80%;
+    margin: 2px;
+    box-shadow: 0 0 50px #1f1f1f69;
+    transition: 0.4s ease-in-out;
+}
+
+.box:hover{
+    transform: scale(1.15) ;
+    opacity: 0.97;
+}
+
+button{
+    border-radius: 2px;
+    background:transparent;
+    margin: 155% auto 0% 19%;
+    padding: 15px 16%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    outline: 0px;
+    border: 1px white solid;
+    cursor: pointer;    
+    transform: translateX(20%);
+}
+
+.photography .button {
+    position: absolute;
+    top: 200px;
+    right: 730px;
+}
+
+
+/* ***************CONTAINER BOXES***************** */
+#box-1 {
+    background-image: url(/img/grid/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-2 {
+    background-image: url(/img/grid/11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-3 {
+    background-image: url(/img/grid/5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-4 {
+    background-image: url(/img/grid/20.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-5 {
+    background-image: url(/img/grid/18.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-6 {
+    background-image: url(/img/grid/19.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.photo-grid-section{
+    min-height: 100vh;
+    background-color: #fff;
+    padding-bottom: 150px;
+}
+
+.photo-grid {
+    max-width: 120rem;
+    margin: auto auto;
+    width: 100%;
+}
+
+.details-header {
+    position: relative;
+    top: 120px;
+    left: 0;
+    padding: 30 130px;
+}
+
+.details-header h1 {
+    margin-top: 1;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+.details-header p {
+    text-align: center;
+}
+
+.text1 {
+    font-size: 4.3rem;
+    padding: 10px;
+    position: relative;
+    transform: translateX(45%);
+}
+
+.text2 {
+    font-size: 4.3rem;
+    position: relative;
+    bottom: -20px;
+    transform: translateX(40%);
+}
+
+.text3 {
+    font-size: 4.3rem;
+    position: relative;
+    bottom: -20px;
+    transform: translateX(40%);
+}
+
+.text4 {
+    font-size: 4.3rem;
+    position: relative;
+    bottom: -50px;
+    transform: translateX(23%);
+}
+
+.text5 {
+    font-size: 4.3rem;
+    position: relative;
+    bottom: -100px;
+    transform: translateX(25%);
+}
+
+ .model {
+    color: #14a76c;
+    font-weight: 200;
+}
+
+.text6 {
+    font-size: 4.3rem;
+    position: relative;
+    bottom: -100px;
+    transform: translateX(33%);
+}
+
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 40px;
+    /* box-shadow: 0 0 50px #1f1f1f69; */
+    grid-gap: 1.6rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'img-1 img-2 img-3 img-3'
+    'img-1 img-4 img-3 img-3'
+    'img-5 img-4 img-7 img-6'
+    'img-11 img-11 img-12 img-12'
+    'img-13 img-14 img-14 img-15'
+    'img-16 img-17 img-18 img-18'
+    'img-16 img-17 img-19 img-20'
+    'img-21 img-21 img-19 img-20'
+    'img-22 img-23 img-24 img-25'
+    'img-22 img-23 img-24 img-25'
+    'img-26 img-27 img-28 img-29'
+    'img-26 img-30 img-31 img-29'
+    'img-35 img-35 img-37 img-37'
+    'img-34 img-32 img-36 img-33'
+}
+
+.image-gallery a {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-gallery a i {
+    color: rgba(255,255,255,0.6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: .4rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image-gallery a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image-gallery a:hover i,
+.image-gallery a:hover::before {
+    opacity: 1;
+}
+
+.img-1 {
+    grid-area: img-1;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/model/1.jpg);
+}
+.img-2 {
+    grid-area: img-2;
+    background-image: url(/img/grid/model/2.jpg);
+}
+.img-3 {
+    grid-area: img-3;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/model/3.jpg);
+}
+.img-4 {
+    grid-area: img-4;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/model/4.jpg);
+}
+
+.img-5 {
+    grid-area: img-5;
+
+    background-image: url(/img/grid/model/5.jpg);
+}
+.img-6 {
+    grid-area: img-6;
+    background-image: url(/img/grid/model/6.jpg);
+}
+.img-7 {
+    grid-area: img-7;
+    background-image: url(/img/grid/model/7.jpg);
+}
+
+
+.img-11 {
+    grid-area: img-11;
+    background-image: url(/img/grid/christmas/10.jpg);
+}
+.img-12 {
+    grid-area: img-12;
+    background-image: url(/img/grid/christmas/11.jpg);
+}
+.img-13 {
+    grid-area: img-13;
+    background-image: url(/img/grid/christmas/12.jpg);
+}
+.img-14 {
+    grid-area: img-14;
+    background-image: url(/img/grid/christmas/13.jpg);
+}
+.img-15 {
+    grid-area: img-15;
+    background-image: url(/img/grid/christmas/14.jpg);
+}
+
+.img-16 {
+    grid-area: img-16;
+    background-image: url(/img/grid/baby/1.jpg);
+}
+.img-17 {
+    grid-area: img-17;
+    background-image: url(/img/grid/baby/2.jpg);
+}
+.img-18 {
+    grid-area: img-18;
+    background-image: url(/img/grid/baby/3.jpg);
+}
+.img-19 {
+    grid-area: img-19;
+    background-image: url(/img/grid/baby/4.jpg);
+}
+.img-20 {
+    grid-area: img-20;
+    background-image: url(/img/grid/baby/5.jpg);
+}
+.img-21 {
+    grid-area: img-21;
+    background-image: url(/img/grid/baby/6.jpg);
+}
+
+
+/* wed */
+.img-22 {
+    grid-area: img-22;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/wed/1.jpg);
+}
+.img-23 {
+    grid-area: img-23;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/wed/2.jpg);
+}
+.img-24 {
+    grid-area: img-24;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/wed/3.jpg);
+}
+.img-25 {
+    grid-area: img-25;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/wed/4.jpg);
+}
+
+/* girls */
+
+.img-26 {
+    grid-area: img-26;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/girls/1.jpg);
+}
+
+.img-27 {
+    grid-area: img-27;
+    background-image: url(/img/grid/girls/2.jpg);
+}
+
+.img-28 {
+    grid-area: img-28;
+    background-image: url(/img/grid/girls/3.jpg);
+}
+
+.img-29 {
+    grid-area: img-29;
+    min-height: 51.5rem;
+    background-image: url(/img/grid/girls/4.jpg);
+}
+
+.img-30 {
+    grid-area: img-30;
+    background-image: url(/img/grid/girls/5.jpg);
+}
+
+.img-31 {
+    grid-area: img-31;
+    background-image: url(/img/grid/girls/6.jpg);
+}
+
+/* explore */
+
+.img-32 {
+    grid-area: img-32;
+    background-image: url(/img/grid/explore/1.jpg);
+}
+.img-33 {
+    grid-area: img-33;
+    background-image: url(/img/grid/explore/2.jpg);
+}
+.img-34 {
+    grid-area: img-34;
+    background-image: url(/img/grid/explore/3.jpg);
+}
+.img-35 {
+    grid-area: img-35;
+    background-image: url(/img/grid/explore/4.jpg);
+}
+.img-36 {
+    grid-area: img-36;
+    background-image: url(/img/grid/explore/5.jpg);
+}
+.img-37 {
+    grid-area: img-37;
+    background-image: url(/img/grid/explore/6.jpg);
+}

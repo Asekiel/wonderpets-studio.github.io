@@ -1,0 +1,46 @@
+/* SPECIAL THANKS TO BOOTSTRAP MEDIA QUERIES */
+/* ------------------------------------------------------------*/
+/* REFERENCE: https://getbootstrap.com/docs/4.1/layout/overview/ */
+
+
+
+@media (max-width: 767.98px) { 
+    .section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section .left {
+        padding: 20px 0;
+    }
+
+    .section-top {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .section-top .right {
+        padding: 20px 0;
+    }
+
+    .section-top .right .text-container{
+        width: auto;
+    }
+
+    .section-top .right .text-container h1{
+        font-size: 4px;
+    }
+
+    .developers {
+        flex-direction: column;
+    }
+
+    .examples {
+        flex-wrap: wrap;
+    }
+    
+    .examples .flex-container {
+        flex: 0.5;
+        flex-basis: 50%;
+    }
+ }
