@@ -5,6 +5,12 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+function toggle() {
+    const menuToggle = document.querySelector('.menuToggle');
+    const navbar = document.querySelector('.navbar-brand');
+    menuToggle.classList.toggle('active');
+    navbar.classList.toggle('active');
+}
 
 // ---------------------------
 // REVEAL 

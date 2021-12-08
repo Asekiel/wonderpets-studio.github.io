@@ -46,11 +46,11 @@
 }
 
 .box {
-    width: 15%;
-    height: 80%;
+    width: 12%;
+    height: 75%;
     margin: 2px;
     box-shadow: 0 0 50px #1f1f1f69;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;  
 }
 
 .box:hover{
@@ -61,23 +61,15 @@
 button{
     border-radius: 2px;
     background:transparent;
-    margin: 155% auto 0% 19%;
-    padding: 15px 16%;
+    margin: 195% auto 0% 19%;
+    padding: 1.4% 9.2%;
     font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
     color: white;
     outline: 0px;
     border: 1px white solid;
-    cursor: pointer;    
-    transform: translateX(20%);
+    cursor: pointer; 
 }
-
-.photography .button {
-    position: absolute;
-    top: 200px;
-    right: 730px;
-}
-
 
 /* ***************CONTAINER BOXES***************** */
 #box-1 {

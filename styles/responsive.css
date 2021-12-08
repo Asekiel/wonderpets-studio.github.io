@@ -5,6 +5,109 @@
 
 
 @media (max-width: 767.98px) { 
+
+    .header,
+    .header.sticky {
+        padding: 10px 20px;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/img/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(/img/icon-close.svg);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    /* .header.sticky .menuToggle {
+        filter: invert(1);
+    } */
+
+
+    .header .navbar-brand {
+        display: none;
+    }
+
+    .header .navbar-brand.active {
+        margin:0;
+        padding: 0;
+        min-width: 100vw;
+        height: 100%;
+        position: fixed;
+        left: 0; top: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        background: #fff;
+    }
+
+    .header .navbar-brand li {
+        margin-left: 0;
+    }
+    
+    .header .navbar-brand li a{
+        font-size: 1.5rem;
+    }
+    .header .navbar-brand li a:hover {
+        color: #14a76c;
+    }
+
+    .home .content {
+        padding-left: 100px;
+    }
+
+    .home .content h2 {
+        font-size: 1.3em;
+    }
+
+    .box{
+        width: 25%;
+        height: 40%;
+    }
+
+    button{
+        margin: 100% 3% 2% 20%;
+    }
+
+    .image-gallery {
+        grid-template-areas: 
+        'img-4 img-4 img-3 img-3'
+        'img-4 img-4 img-3 img-3'
+        'img-6 img-6 img-5 img-5'
+        'img-6 img-6 img-5 img-5'
+        'img-7 img-7 img-2 img-2'
+        'img-7 img-7 img-2 img-2'
+        'img-1 img-1 img-1 img-1'
+        'img-11 img-11 img-12 img-12'
+        'img-13 img-14 img-14 img-15'
+        'img-16 img-17 img-18 img-18'
+        'img-16 img-17 img-19 img-20'
+        'img-21 img-21 img-19 img-20'
+        'img-22 img-23 img-24 img-25'
+        'img-22 img-23 img-24 img-25'
+        'img-26 img-27 img-28 img-29'
+        'img-26 img-30 img-31 img-29'
+        'img-35 img-35 img-37 img-37'
+        'img-34 img-32 img-36 img-33'
+    }
+
+    /* .img-16 {
+        min-height: 41.5rem;
+    }
+
+    .img-17 {
+        min-height: 41.5rem;
+    } */
+
     .section {
         flex-direction: column;
         height: auto;
@@ -16,21 +119,22 @@
 
     .section-top {
         flex-direction: column;
-        height: 200px;
+        /* height: 200px; */
     }
 
     .section-top .right {
-        padding: 20px 0;
+        padding: 40px 0;
     }
 
     .section-top .right .text-container{
         width: auto;
     }
-
     .section-top .right .text-container h1{
+        font-size: 10px;
+    }
+    .section-top .right .text-container p{
         font-size: 4px;
     }
-
     .developers {
         flex-direction: column;
     }

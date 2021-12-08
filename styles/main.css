@@ -2,7 +2,6 @@
 
 
 @import url(./content.css);
-@import url(./about.css);
 @import url(./responsive.css);
 
 * {
@@ -275,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .section-top .right .text-container h1{
-        font-size: 40px;
+        font-size: 25px;
         margin-bottom: 8px;
         color: #14a76c;
     }
@@ -316,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .left h1 {
-        font-size: 40px;
+        font-size: 25px;
         margin-bottom: 8px;
         color: #14a76c;
     }
@@ -446,7 +445,7 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
     }
 
-    .examples .flex-container {
+    .examples div {
         flex: 0.25;
     }
 
