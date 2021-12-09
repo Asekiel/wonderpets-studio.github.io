@@ -30,7 +30,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #fff;
+    background: #14a76c;
     border-radius: 5rem;
 }
 
@@ -76,16 +76,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header.sticky {
-    background: #14a76c;
+    background: #fff;
     padding: 23px 100px;
+    box-shadow: 0 .3em 50px rgba(0,0,0,0.6);
 }
-.header .logo {
-    color: #fff;
-    font-size: 1.2rem;
+
+.logo {
+    display: flex;
+    position: relative;
+}
+
+.logo img {
+    width: 100%;
+    height: 50px;
+    top: -10px;
 }
 
 .header.sticky .logo {
+    position: absolute;
+    top: 2px;
+}
 
+.header.sticky .logo img {
+    width: 100%;
+    height: 65px;
+    transition: 0.5s;
 }
 
 .header .toggle {
@@ -374,6 +389,11 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         justify-content: space-between;
     }
+
+    .developer h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
     
     .developers .developer {
         display: flex;
@@ -419,25 +439,31 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 8px;
     }
 
+    .developers .developer .info {
+        width: 100px;
+        height: 100px;
+    }
+
     .developers .developer .details {
         display: flex;
         padding-top: 50px;
+        padding-bottom: 50px;
         flex-direction: column;
         text-align: center;
         position: relative;
     }
 
-    /* .details1 {
-        top: -10px;
-    }
-
     .details2 {
-        top: -13px;
+        top: -17px;
     }
 
-    .details4 {
-        top: -10px;
-    } */
+    .details3 {
+        top: 28px;
+    }
+
+    .details5 {
+        top: -45px;
+    }
 
     /* AFTER DEV COMMERCIALS  */
     
@@ -473,11 +499,9 @@ footer {
      text-align: center;
 }
 
-.footer-content h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
+.footer-content img {
+    width: 90px;
+    height: 90px;
 }
 
 .footer-content p {

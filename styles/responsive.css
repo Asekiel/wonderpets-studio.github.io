@@ -9,6 +9,7 @@
     .header,
     .header.sticky {
         padding: 10px 20px;
+        display: flex;
     }
 
     .menuToggle {
@@ -27,9 +28,9 @@
         cursor: pointer;
     }
 
-    /* .header.sticky .menuToggle {
+    .header.sticky .menuToggle {
         filter: invert(1);
-    } */
+    }
 
 
     .header .navbar-brand {
@@ -65,8 +66,13 @@
         padding-left: 100px;
     }
 
+    home .content h1 {
+        font-size: 2em;
+    
+    }
+
     .home .content h2 {
-        font-size: 1.3em;
+        font-size: 2.18em;
     }
 
     .box{
@@ -147,4 +153,20 @@
         flex: 0.5;
         flex-basis: 50%;
     }
+ }
+
+ @media (min-width: 576px) {
+    .home .content {
+        padding-left: 100px;
+    }
+
+    home .content h1 {
+        font-size: 2em;
+    
+    }
+
+    .home .content h2 {
+        font-size: 2.18em;
+    }
+
  }
